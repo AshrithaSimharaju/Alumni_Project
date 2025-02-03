@@ -1,0 +1,140 @@
+/* Container for the entire component */
+.add-event-container{
+    font-family: 'Arial', sans-serif;
+    margin: 0 auto;
+  
+    border-radius: 8px;
+    background-image: url('https://t4.ftcdn.net/jpg/02/32/31/35/360_F_232313574_RQulKuo65nA4ffP9YKSqs0V43TCxEeUW.jpg'); /* Add your image URL here */
+    background-size: cover;
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    padding: 100px 800px;
+  }
+  
+
+  @keyframes textColorChange {
+    0% { color: red; }
+    50% { color: black; }
+    75% { color: green; }
+    100% { color: blue; }
+  }
+ 
+ 
+  .add-event-container h1 {
+    text-align: center;
+    color:black;
+    font-size: 3.5rem;
+    margin:10px;
+    padding: 40px 10px;
+    
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+ 
+/* 
+   .add li {
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding-top: 45px;
+    border-radius: 50%;
+    width: 400px; 
+    height: 200px; 
+    
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    font-size: 1.4rem; 
+    color: #333; 
+  } */
+  /* Bounce animation keyframes */
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); /* Default position */
+    }
+    50% {
+      transform: translateY(-20px); /* Move upward */
+    }
+  }
+  
+  /* Updated .add li with bounce animation */
+  .add li {
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding-top: 45px;
+    border-radius: 50%; /* Makes it elliptical */
+    width: 400px; /* Adjust width to create an ellipse */
+    height: 200px; /* Adjust height to create an ellipse */
+    align-items: center; /* Vertically centers the text */
+    justify-content: center; /* Horizontally centers the text */
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    font-size: 1.4rem; 
+    color: #333;
+    
+    /* Animation */
+    animation: bounce 2s infinite; /* Applies the bounce animation */
+  }
+  
+
+
+  
+  li h2 {
+    margin: 0;
+    color: #007bff;
+    font-size: 1.5rem;
+    animation: textColorChange 6s infinite; 
+  }
+  
+  li p {
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Event button container */
+  .event-button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  /* Button styles */
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button:first-child {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  button:first-child:hover {
+    background-color: #0056b3;
+  }
+  
+  button:last-child {
+    background-color: green;
+    color: white;
+  }
+  
+  button:last-child:hover {
+    background-color: green;
+  }
+  

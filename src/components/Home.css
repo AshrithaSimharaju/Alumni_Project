@@ -1,0 +1,106 @@
+
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px 20px;
+    height:100px;
+  }
+  
+  .navbar-left p {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight:800;
+    padding-right:600px;
+  }
+  
+  .navbar-right .nav-link {
+    color: #f6f2f2;
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-right .nav-link:hover {
+    color: hsl(180, 1%, 33%);
+  }
+  /* CollegeInfo.css */
+  /* CollegeInfo.css */
+  .college-info {
+    height: 100vh;
+    background-image: url("../images/home11.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    box-sizing: border-box;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .college-text {
+    
+    padding: 20px;
+    border-radius: 8px;
+    display:flex;
+    margin-left:900px;
+   
+   color: black;
+    animation: slideIn 1.5s ease-in-out;
+  }
+  
+  .college-text h1 {
+    margin: 10px;
+    font-size: 5rem;
+    width: fit-content;
+    color: #ffffff;
+    /* color:red; */
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+  .college-text p {
+    font-size: 1.8rem;
+    color: white;
+    font-family: 'Dancing Script', cursive; /* Apply cursive font */
+    font-weight: 400; /* Regular weight */
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    width: 35%;
+    line-height: 1.6;
+    text-align: center; /* Center the text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add a shadow for better readability */
+  }
+  
+  /* Optional: Hover effect */
+  .college-text p:hover {
+    color: #f1f1f1;
+    transform: scale(1.05);
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Keyframes for animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
