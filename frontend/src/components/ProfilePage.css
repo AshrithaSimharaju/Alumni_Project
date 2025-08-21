@@ -1,0 +1,86 @@
+.profile-page {
+  background-image: url('../images/backg6.jpeg');
+  background-size: cover;
+  width: 100vw; 
+  height:150vh;
+  display: flex;
+ 
+  margin: 0; 
+  padding: 0; 
+}
+.carddiv{
+  margin-left:400px;
+  margin-bottom:400px;
+  
+}
+.carddiv h1{
+  margin-top:20px;
+  margin-left:150px;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* .profile-image {
+  margin-bottom: 10px;
+} */
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  /* gap: 15px; */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: none;
+}
+
+.btn-submit {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background: #0056b3;
+}
+@media (max-width: 1024px) {
+  .carddiv{
+  margin-left:400px;
+  margin-bottom:400px;
+  
+}
+.carddiv h1{
+  margin-top:20px;
+  margin-left:150px;
+}
+}

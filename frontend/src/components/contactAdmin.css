@@ -1,0 +1,127 @@
+/* General page styles */
+.contact-page {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f6fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Header */
+.contact-page header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-page header h1 {
+  font-size: 2rem;
+  color: #2f3640;
+}
+
+/* Main content wrapper */
+.content-wrapper {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Card container */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Form group */
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #2f3640;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #dcdde1;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #40739e;
+  outline: none;
+}
+
+/* Buttons */
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn-submit,
+.btn-back {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-submit {
+  background-color: #40739e;
+  color: white;
+}
+
+.btn-submit:hover {
+  background-color: #3498db;
+  transform: translateY(-2px);
+}
+
+.btn-back {
+  background-color: #dcdde1;
+  color: #2f3640;
+}
+
+.btn-back:hover {
+  background-color: #bdc3c7;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    padding: 20px;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+
+  .btn-submit,
+  .btn-back {
+    width: 100%;
+  }
+}

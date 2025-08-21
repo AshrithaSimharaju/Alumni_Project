@@ -1,0 +1,179 @@
+/* ============================= */
+/* Background */
+body.profile-view-page-bg {
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/006/826/882/small/abstract-background-with-technology-circuit-board-texture-electronic-motherboard-illustration-communication-and-engineering-concept-illustration-free-vector.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* ============================= */
+/* Main wrapper */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+/* ============================= */
+/* Profile Card */
+.profile-view-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 500px;
+  padding: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.profile-view-container:hover {
+  transform: translateY(-3px);
+}
+
+/* ============================= */
+/* Profile Header */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.profile-header img {
+  margin-top: 20px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #0c1737;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-header img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.profile-header h1 {
+  font-size: 1.6rem;
+  margin: 5px 0 0;
+  color: #0c1737;
+}
+
+/* ============================= */
+/* Profile Details */
+.profile-details {
+  text-align: left;
+  margin-top: 10px;
+}
+
+
+.profile-details strong {
+  color: #111;
+  font-weight: 600;
+}
+
+/* ============================= */
+/* Error Message */
+.error-message {
+  color: red;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+/* ============================= */
+/* Back Button */
+.back-button {
+  display: flex;
+  justify-content: center;
+}
+
+.back-button button {
+  background: #ff7043;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.back-button button:hover {
+  background: #e65100;
+  transform: scale(1.05);
+}
+
+/* ============================= */
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-h1 {
+    font-size: 1.8rem;
+    padding: 8px 15px;
+  }
+
+  .profile-view-container {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .profile-header img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-header h1 {
+    font-size: 0.4rem;
+  }
+
+  .profile-details p {
+    font-size: 0.95rem;
+    padding: 6px 10px;
+  }
+
+  .back-button button {
+    font-size: 0.9rem;
+    padding: 8px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-h1 {
+    font-size: 1.5rem;
+    margin: 15px auto;
+  }
+
+  .profile-view-container {
+    padding: 15px;
+  }
+
+  .profile-header img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile-header h1 {
+    font-size: 1.2rem;
+  }
+
+  .profile-details p {
+    font-size: 0.9rem;
+    padding: 5px 8px;
+  }
+
+  .back-button button {
+    font-size: 0.85rem;
+    padding: 6px 15px;
+  }
+}

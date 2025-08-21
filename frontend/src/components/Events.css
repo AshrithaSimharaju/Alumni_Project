@@ -1,0 +1,77 @@
+.event-form-container {
+    background: url('https://images.pexels.com/photos/159490/yale-university-landscape-universities-schools-159490.jpeg?cs=srgb&dl=pexels-pixabay-159490.jpg&fm=jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .event-form {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .event-form h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .event-form input,
+  .event-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .event-form input[type="date"] {
+    font-size: 16px;
+  }
+  
+  .event-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .event-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .event-form input:focus,
+  .event-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .event-form input::placeholder,
+  .event-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .event-form input,
+  .event-form textarea {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  

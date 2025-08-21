@@ -1,0 +1,21 @@
+.logincard input,
+.logincard select,
+.logincard button {
+  all: unset; /* removes browser default styles */
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.logincard button {
+  background: green;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+.t-h{
+     color:black;
+}
